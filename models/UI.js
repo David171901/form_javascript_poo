@@ -40,6 +40,8 @@ export class UI{
         `;
         const element = document.getElementById("quiz");
         element.innerHTML = quizEndHTML;
+        for (var i = 1; i < 99999; i++)
+        window.clearInterval(i);
     }
 
     showProgress(currentIndex,total){
@@ -49,7 +51,7 @@ export class UI{
         `
     }
 
-    showTimer(score){
+    showTimer(){
         // Set the date we're counting down to
         var countDownDate = new Date().getTime()+ 3*60000;
 
