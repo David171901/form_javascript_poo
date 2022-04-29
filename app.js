@@ -11,7 +11,7 @@ import {UI} from './models/UI.js'
 
 const renderPage = (quiz,ui)=>{
     if (quiz.isEnded()){
-        ui.showScore(quiz.score)
+        ui.showScore(quiz.score,quiz.questions.length)
     }
     else{
         ui.showQuestion(quiz.getQuestionIndex().text)

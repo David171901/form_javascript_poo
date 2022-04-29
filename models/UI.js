@@ -31,11 +31,11 @@ export class UI{
         }
     }
 
-    showScore(score){
+    showScore(score,total){
         const quizEndHTML = `
         <div class="results">
             <h2>Result</h2>
-            <h3>Your Score ${score}</h3>
+            <h3>Your Score ${score} of ${total}</h3>
         </div>
         `;
         const element = document.getElementById("quiz");
@@ -53,7 +53,7 @@ export class UI{
 
     showTimer(){
         // Set the date we're counting down to
-        var countDownDate = new Date().getTime()+ 3*60000;
+        var countDownDate = new Date().getTime()+ 2*60000;
 
         // Update the count down every 1 second
         var x = setInterval(function() {
