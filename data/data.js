@@ -31,11 +31,11 @@ export const data = [
         question: `A: When are ____________ to the beach?
         B: In about two hours.`,
         choises:[
-            "you going ",
+            "you going",
             "you eating",
             "she visiting ",
         ],
-        answer: "you going ",
+        answer: "you going",
     },
     {
         question: `_____ Oranges are delicious.`,
